@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import LiftingStateUp from './components/LiftingStateUp';
+import Composition from './components/Composition';
+// import LiftingStateUp from './components/LiftingStateUp';
 // import ControlledComponent from './components/ControlledComponent';
 
 
@@ -14,7 +15,11 @@ class App extends React.Component {
   render() {
     console.log("APP RENDER");
     return (
-      <LiftingStateUp />
+      <Composition value="hello">
+        <h1>
+          I am children of Composition Component
+        </h1>
+      </Composition>
     )
   }
 }
