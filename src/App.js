@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import ControlledComponent from './components/ControlledComponent';
+import LiftingStateUp from './components/LiftingStateUp';
+// import ControlledComponent from './components/ControlledComponent';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +14,7 @@ class App extends React.Component {
   render() {
     console.log("APP RENDER");
     return (
-      <ControlledComponent />
+      <LiftingStateUp />
     )
   }
 }
